@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown')
 const questions = [
   {
       type: 'input',
@@ -22,9 +23,10 @@ const questions = [
       name: 'usage',
     },
     {
-      type: 'input',
+      type: 'list',
       message: 'which license?',
       name: 'license',
+      choices: ['MIT', 'Apache', 'GPLv2', 'GPLv3']
     },
     {
       type: 'input',
@@ -38,34 +40,22 @@ const questions = [
     },
     {
       type: 'input',
-      message: 'Give your email, and github for questions to be directed to.',
-      name: 'questions',
+      message: 'Give your email, for questions to be directed to.',
+      name: 'email',
+    },
+    {
+      type: 'input',
+      message: 'Give your github for questions to be directed to.',
+      name: 'github',
     },
   
 ];
 
 
-function writeToFile(fileName, {title, description, installation, usage, license, contribution, tests, questions}) 
+function writeToFile(fileName, data) 
 {
-  let readmeContent = 
-`
-# ${title}
-# Table of Contents
-${description}
-# Installation
-${installation}
-# Usage
-${usage}
-# License
-${license}
-# Contributing
-${contribution}
-# Tests
-${tests}
-# Questions
-${questions}
-`
-  fs.writeFile(fileName, readmeContent, (err) =>
+
+  fs.writeFile(fileName, generateMarkdown(data), (err) =>
        err ? console.error(err) : console.log('Success!')
     )
 }
@@ -77,8 +67,6 @@ const init = () =>
     {
       writeToFile('Readme.md', response)
     }
-
-
     );
 }
 init()
