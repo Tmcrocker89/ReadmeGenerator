@@ -1,14 +1,15 @@
 {
   "name": "readmegenerator",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Travis Crocker",
   "license": "ISC",
   "dependencies": {
     "inquirer": "^8.2.0"
-  }
+  },
+  "devDependencies": {},
+  "description": "This will generate a readme based on the information entered"
 }
