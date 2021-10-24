@@ -34,13 +34,13 @@ function generateMarkdown({title, description, installation, usage, license, con
   # License
   ${licenseBadge}
   # Table of Contents
-  [Description](#Description)<br>
-  [Installation](#Installation)<br>
-  [Usage](#Usage)<br>
-  [License](#License)<br>
-  [Contributing](#Contributing)<br>
+  [Description](#description)<br>
+  [Installation](#installation)<br>
+  [Usage](#usage)<br>
+  [License](#license)<br>
+  [Contributing](#contributing)<br>
   [Tests](#tests)<br>
-  [Questions](#Questions)<br>
+  [Questions](#questions)<br>
   # Description
   ${description}
   # Installation

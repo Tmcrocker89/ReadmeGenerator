@@ -3,13 +3,13 @@
 # License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # Table of Contents
-[Description](#Description)<br>
-[Installation](#Installation)<br>
-[Usage](#Usage)<br>
-[License](#License)<br>
-[Contributing](#Contributing)<br>
+[Description](#description)<br>
+[Installation](#installation)<br>
+[Usage](#usage)<br>
+[License](#license)<br>
+[Contributing](#contributing)<br>
 [Tests](#tests)<br>
-[Questions](#Questions)<br>
+[Questions](#questions)<br>
 # Description
 # Installation
 Download the code from github, then open a terminal where the package.json is located. Run npm install to install the required packages.
