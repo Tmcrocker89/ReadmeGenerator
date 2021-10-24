@@ -31,6 +31,8 @@ function generateMarkdown({title, description, installation, usage, license, con
   return (
   `
   # ${title}
+  # License
+  ${licenseBadge}
   # Table of Contents
   [Description](#Description)<br>
   [Installation](#Installation)<br>
@@ -46,8 +48,6 @@ function generateMarkdown({title, description, installation, usage, license, con
   ${installation}
   # Usage
   ${usage}
-  # License
-  ${licenseBadge}
   # Contributing
   ${contribution}
   # Tests
