@@ -18,14 +18,12 @@ function renderLicenseBadge(license)
   {
     return `[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)`
   }
+  else
+  {
+    return ''
+  }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) 
-{
-  return renderLicenseBadge(license)
-}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown({title, description, installation, usage, license, contribution, tests, email, github}) {
@@ -33,15 +31,23 @@ function generateMarkdown({title, description, installation, usage, license, con
   return (
   `
   # ${title}
+  # License
+  ${licenseBadge}
   # Table of Contents
+  [Description](#Description)<br>
+  [Installation](#Installation)<br>
+  [Usage](#Usage)<br>
+  [License](#License)<br>
+  [Contributing](#Contributing)<br>
+  [Tests](#tests)<br>
+  [Questions](#Questions)<br>
+  # Description
   ${description}
   # Installation
   ### How to install the application
   ${installation}
   # Usage
   ${usage}
-  # License
-  ${licenseBadge}
   # Contributing
   ${contribution}
   # Tests
