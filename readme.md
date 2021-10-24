@@ -1,7 +1,14 @@
 
 # Readme Generator
 # Table of Contents
-This will generate a readme based on the questions you answer.
+[Description](#Description)<br>
+[Installation](#Installation)<br>
+[Usage](#Usage)<br>
+[License](#License)<br>
+[Contributing](#Contributing)<br>
+[Tests](#tests)<br>
+[Questions](#Questions)<br>
+# Description
 # Installation
 download the code from github, then open a terminal where the package.json is located. Run npm install to install the required packages.
 # Usage
